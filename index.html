@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>fetch Api Sandbox</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container">
+      <div class="display-4 mb-4">Fetch API Sandbox</div>
+      <div class="d-flex">
+         <button class="btn btn-primary mr-4" id="getText">Get Text</button>
+         <button class="btn btn-success mr-4" id="getUsers">Get JSON</button>
+         <button class="btn btn-warning mr-4" id="getPost">Get Post DATA</button>
+         <button class="btn btn-info mr-4" id="getComment">Get Comment DATA</button>
+         <button class="btn btn-dark mr-4" id="getAlbum">Get Album DATA</button>
+         <button class="btn btn-danger mr-4" id="getImages">Get Images DATA</button>
+      </div>
+      <hr>
+      <div id="output"></div>
+      <form id="addPost">
+         <div class="form-group mt-4">
+            <input type="text" id="title" placeholder="Title" class="form-control">
+         </div>
+         <div class="form-group">
+            <textarea id="body" placeholder="Body" class="form-control"></textarea>
+         </div>
+         <input type="submit" value="submit" class="btn btn-secondary">
+      </form>
+   </div>   
+   <script src="fetch.js"></script>
+</body>
+</html>
